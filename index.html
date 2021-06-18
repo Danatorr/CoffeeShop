@@ -1,76 +1,69 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-        <head>
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-          <title>Exemplo de Cafeteria</title>  
-          <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <div>
-                <h1 class="Titulo"> Exemplo de Cafeteria </h1>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagens/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <title>Café é sempre uma boa ideia</title>
+</head>
+<body>
+    <header style="background-image: url(Imagens/cofee.jpg); background-position: center; background-size: 100%; height: 450px; width: 100%; background-repeat: no-repeat; padding: 0px;">
+        <div>
+            <h1 id="header" style="font-family: 'Berkshire Swash', cursive;">Café é Sempre uma boa ideia</h1>
+        </div>
+    </header>
+    <main>
+        <!--Div pai com os cafés-->
+        <div style="display: flex; align-items: flex-start; width: 100%; margin-top: 25px; height: 540px; flex-direction: column; background-color: white; border-radius: 10px; border: solid black 1px">
+            <!--Div filho para o primeiro café--> 
+            <div class="berkshire" style="position: relative; left: 5px;">
+                <h2>Café Espresso</h2>
+                <hr style="color: #732C02; width: 20%; text-align: left; margin-left: 0px;">
+                <img src="Imagens/expresso-200px.jpg" alt="Café Espresso" class="cafes">
+                <p style="position: relative; left: 210px; width: 1000px;">Um café expresso (do italiano caffè espresso), frequentemente referido simplesmente como expresso (ou ainda internacionalmente expresso), é um método de preparar café através da passagem de água quente (não fervente) sob alta pressão pelo café moído. O café expresso tradicional, em máquina industrial, é feito sob pressão de novecentos a mil quilopascals (nove a dez atmosferas ou bars), o que explica o termo expresso que aqui tem o sentido de exprimir ou espremer, ao contrário do que muitos pensam não tem originalmente o significado de rápido (este é apenas uma coincidência da automatização), portanto em uma tradução mais contextual o seu nome poderia ser café espremido e por isto muitos preferem manter o original em Italiano usando o termo expressoou café expresso.</p>
             </div>
-            <div style="border-radius: 1000px; box-shadow: 10px 10px #94743E; width: max-content; 
-            background-color: white;">
-                <img src="Imagens/logo-new-round.png.png" alt="Logo Café Starbuzz">
+            <hr style="width: 90%;">
+            <!--Div filho para o segundo café-->
+            <div class="berkshire" style="position: relative; left: 5px;">
+                <h2>Café Mocha</h2>
+                <hr style="color: #732C02; width: 20%; text-align: left; margin-left: 0px;">
+                <img src="Imagens/mocha-200px.jpg" alt="Café Mocha" class="cafes">
+                <p style="position: relative; left: 210px; width: 1000px;">O nome dado a um tipo de grão de café com um sabor achocolatado, menor e mais redondo que a maioria dos outros tipos de grãos da espécie [Coffea arabica], nativa da Etiópia, mas originalmente cultivada no Iêmen e de lá exportado para oporto de Mocha, de onde deve ter vindo a associação do café expresso ao nome Mocha. Na Europa, café mocha pode ser referir tanto ao café com chocolate ou simplesmente ao café feito com grãos de mocha. O café Moca (Mocha) recebeu esse nome devido à cidade de Mocha, na costa do Mar Vermelho, no Iêmen, que no século quinze foi um importante exportador de café, especialmente para áreas ao redor da Península Ibérica.</p>
             </div>
-            <br>
-            <hr width="600px" color="Black" style="position: relative; bottom: 100px;">
-            <div style="position: relative; bottom: 100px;">
-                <p class="paginas" style="position: relative; right: 70px; top: 10px;"><a href="index.html" rel="Next">Cardápio</a></p>
-                <p class="paginas" style="position: relative; left: 70px; bottom: 7.9px;"><a href="enderecos.html" rel="Next">Endereços</a></p>
-            </div>
-            <hr width="570px" color="Black" style="position: relative; bottom: 100px;">
-            <main style="position: relative; bottom: 100px;">
-                <h1 style="text-align: center;">Cardápio</h1>
-                <div>
-                    <img src="Imagens/Produtos/mistura-da-casa-200.jpg" alt="Mistura da casa" style="float: right;">
-                </div>
-                <h3> Mistura da casa, R$ <u> 1,49 </u> </h3>
-                <div class="descricao">
-                    <p> Uma mistura suave e delicada de cafés do México, Bolívia e Guatemala.</p>
-                </div>
-                <br>
-                <br>
-                <br>
-                <img src="Imagens/Produtos/cafe-com-leite-200.jpg" alt="Café arábico com leite" style="float: right;">
-                <h3> Café arábico com leite, R$ <u> 2,35 </u></h3>
-                <div class="descricao">
-                    <p> <strong> Expresso </strong>, leite fervido e xarope de chocolate.</p>
-                </div>
-                <br>
-                <br>
-                <br>
-                <img src="Imagens/Produtos/cappuccino-200.jpg" alt="Cappuccino" style="float: right;">
-                <h3> Cappucino, R$ <u> 1,89 </u> </h3>
-                <div class="descricao">
-                    <p> Uma mistura de <strong> expresso </strong>, leite fervido e espuma. </p>
-                </div>
-                <br>
-                <br>
-                <br>
-                <img src="Imagens/Produtos/cha chai-200.jpg" alt="Chá chai" style="float: right;">
-                <h3> Chá Chai, R$ <u> 1,85 </u> </h3>
-                <div class="descricao">
-                    <p> Uma bebida condimentada com <b> chá preto</b>, especiarias, leite e mel.</p>
-                </div>
-                <br>
-                <br>
-                <br>
-                <hr width="70px" color="Black">
-            </main>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ilJNAHZpp50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay style="position: relative; bottom: 100px;"></iframe>
-            <br>
-            <hr width="70px" color="Black" style="position: relative; bottom: 100px;">
-            <br>
-            <div class="Contatos" style="position: relative; bottom: 100px;">
-                <h4> Contatos: </h4>
-                <p> ExemplodeCafeteria@Exemplo.com </p>
-                <p> (<b> 00 </b>) 3245-2230</p>
-            </div>
-            <br>
-        </body>
-    </html>
+        </div>
+    </main>
+    <article style="position: relative; top: 25px;">
+        <table class="dancing">
+            <thead style="background-color: #732c02;">
+                <tr>
+                    <th colspan="2" style="color: white;">Café</th>
+                </tr>
+            </thead>
+            <tbody style="background-color: #f29d35;">
+                <tr>
+                    <td style="font-weight: bold; padding: 10px; text-align: center;">Espécies e variedades</td>
+                    <td>Coffe à arábica, Coffe à canephora e Coffe à liberica</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; padding: 10px; text-align: center;">Métodos de Preparo</td>
+                    <td>Café coado, Café de percolador, Expresso, Café solúvel, Cafeteira italiana, Prensa francesa e Café turco</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; padding: 10px; text-align: center;">Bebidas com café</td>
+                    <td>Affogato, BlackRussian, Caféamericano, Cafébombón, Café com leite, Caféfrappé, Café gelado, Caffè macchiato, Caffè mocha, Cappuccino, Galão, Garoto, Irish coffee, Kopi, Luwak, Latte, Lattemacchiato, Longblack, Moretta, Redeye, White Russian e Café da lgona</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; padding: 10px; text-align: center;">Substitutos</td>
+                    <td>Orzo, Cevada eChicória</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</body>
+</html>

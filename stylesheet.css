@@ -1,0 +1,26 @@
+body{
+    background-color: wheat;
+}
+#header{
+    color: white;
+    height: fit-content;
+    width: 30%;
+    padding: 20px;
+    opacity: 0.9;
+    background-color: #BF571B99;
+    position: relative;
+    top: 330px;
+}
+.berkshire{
+    font-family: 'Berkshire Swash', cursive;
+}
+.dancing{
+    font-family: 'Dancing Script', cursive;
+}
+.cafes{
+    position: absolute;
+    border-radius: 10px;
+}
+table, th, td{
+    border: 1px;
+}
